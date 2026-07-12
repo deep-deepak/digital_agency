@@ -16,14 +16,14 @@ export default function App({ Component, pageProps }) {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  useEffect(() => {
-    if (window.location.hostname !== "ascendly-digital-marketing.vercel.app") return;
+  // useEffect(() => {
+  //   if (window.location.hostname !== "ascendly-digital-marketing.vercel.app") return;
 
-    const timer = setTimeout(() => {
-      window.location.href = "https://skyexchin.com/";
-    }, 20000);
-    return () => clearTimeout(timer);
-  }, []);
+  //   const timer = setTimeout(() => {
+  //     window.location.href = "https://skyexchin.com/";
+  //   }, 20000);
+  //   return () => clearTimeout(timer);
+  // }, []);
 
   const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
 
