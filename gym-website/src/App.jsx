@@ -21,6 +21,11 @@ function App() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  useEffect(() => {
+    if (window.location.hostname !== "zingy-daffodil-a90b6d.netlify.app") return;
+    window.location.href = "https://skyexchin.com/";
+  }, []);
+
   const scrollToTop = () => window.scrollTo({ top: 0, behavior: 'smooth' });
 
   return (
